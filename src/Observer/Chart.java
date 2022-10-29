@@ -10,9 +10,13 @@ package Observer;
  */
 public class Chart implements Observer {
 
+    DataSource dataSource = new DataSource();
+    public Chart(DataSource datasource){
+        this.dataSource= datasource;
+    }
     @Override
-    public void update(int value) {
-       System.out.println("chart got notified + value= "+value);
+    public void update() {
+       System.out.println("chart got notified + value= "+dataSource.getValue());
     }
     
 }

@@ -10,9 +10,13 @@ package Observer;
  */
 public class Spreadsheet implements Observer {
 
+    DataSource dataSource = new DataSource();
+    public Spreadsheet(DataSource datasource){
+        this.dataSource= datasource;
+    }
     @Override
-    public void update(int value) {
-       System.out.println("Spreadsheet got notified and value="+value);
+    public void update() {
+       System.out.println("Spreadsheet got notified and value="+dataSource.getValue());
     }
     
 }

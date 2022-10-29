@@ -11,8 +11,8 @@ package Observer;
 public class Main {
     public static void main(String args[]){
         DataSource datasource = new DataSource();
-        var chart1 = new Chart();
-        var spreadSheet1 = new Spreadsheet();
+        var chart1 = new Chart(datasource);
+        var spreadSheet1 = new Spreadsheet(datasource);
         datasource.addObserver(chart1);
         datasource.addObserver(spreadSheet1);
         datasource.setValue(7);

@@ -18,9 +18,9 @@ public class Subject {
     public void removeObserevr(Observer observer){
         this.observers.remove(observer);
     }
-    public void notifyObservers(int value){
+    public void notifyObservers(){
         for(Observer observer: observers){
-            observer.update(value);
+            observer.update();
         }
     }
 }
