@@ -8,17 +8,17 @@ package singelton;
  *
  * @author lenovo
  */
-public class Singelton {
+public final class Singelton {
     private static Singelton singeltonInstance;
     public int value;
     private Singelton(int value){
-//        try{
-//            Thread.sleep(1000);
-//            
-//        }
-//        catch(InterruptedException ex){
-//            ex.printStackTrace();
-//        }
+        try{
+            Thread.sleep(1000);
+            
+        }
+        catch(InterruptedException ex){
+            ex.printStackTrace();
+        }
         this.value = value;
         System.out.println("new object is created");
     }
