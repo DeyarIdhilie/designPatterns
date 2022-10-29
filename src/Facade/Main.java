@@ -10,11 +10,7 @@ package Facade;
  */
 public class Main {
    public static void main(String args[]){
-    NotificationServer server = new NotificationServer();
-    Connection connection = server.connect();
-    AuthToken token = server.authenticate("root", "1234");
-    Message msg = new Message("new msg");
-    server.sendMessage(msg, token, "target");
-    connection.disconnect();
+    NotificationService service = new NotificationService();
+    service.sendMessage("hello world", "deyar_ip", "deyar", "1234");
     }
 }
