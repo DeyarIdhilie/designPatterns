@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package adapter;
-
+import adapter.najahFilters.Desert;
 /**
  *
  * @author lenovo
@@ -14,5 +14,8 @@ public class Main {
        ImageView imageview = new ImageView(image);
        VividFilter filter = new VividFilter();
        imageview.applyFilter(filter);
+       Desert desert = new Desert();
+       imageview.applyFilter(desert);
+       
    } 
 }
