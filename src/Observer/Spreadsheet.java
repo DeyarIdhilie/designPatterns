@@ -11,8 +11,8 @@ package Observer;
 public class Spreadsheet implements Observer {
 
     @Override
-    public void update() {
-       System.out.println("Spreadsheet got notified");
+    public void update(int value) {
+       System.out.println("Spreadsheet got notified and value="+value);
     }
     
 }

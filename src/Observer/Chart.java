@@ -11,8 +11,8 @@ package Observer;
 public class Chart implements Observer {
 
     @Override
-    public void update() {
-       System.out.println("chart got notified");
+    public void update(int value) {
+       System.out.println("chart got notified + value= "+value);
     }
     
 }
