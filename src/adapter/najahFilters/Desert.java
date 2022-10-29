@@ -9,7 +9,7 @@ import adapter.Image;
  *
  * @author lenovo
  */
-public class Desert implements Filter{
+public class Desert{
 
     public void init(){
         
@@ -20,11 +20,6 @@ public class Desert implements Filter{
     public void render(Image image){
         System.out.println("Desert Filter");
     }
-    @Override
-    public void apply(Image img) {
-        init();
-        prepare();
-        render(img);
-       }
+   
     
 }

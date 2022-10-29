@@ -15,7 +15,8 @@ public class Main {
        VividFilter filter = new VividFilter();
        imageview.applyFilter(filter);
        Desert desert = new Desert();
-       imageview.applyFilter(desert);
+       DesertFilter desertfilter= new DesertFilter(desert);
+       imageview.applyFilter(desertfilter);
        
    } 
 }
